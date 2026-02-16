@@ -827,3 +827,46 @@ body{
   font-weight: 800;
   opacity: .85;
 }
+/* About Hero */
+.about-hero{
+  position: relative;
+  min-height: 80vh;
+  background: url("assets/images/about-hero.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.45);
+}
+
+.about-hero__inner{
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 24px;
+  color: #fff;
+}
+
+.about-hero h1{
+  font-size: clamp(32px, 6vw, 64px);
+  margin-bottom: 20px;
+}
+
+.about-hero p{
+  font-size: 18px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+/* Allura Initial */
+.allura-initial::first-letter{
+  font-family: 'Allura', cursive;
+  font-size: 1.6em;
+}
+
